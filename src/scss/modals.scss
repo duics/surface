@@ -3,11 +3,13 @@
 
 input[id*="modal-"] {
 	display: none;
+	z-index: 1
 	&:checked {
 		+ label {
 			outline: none;
 			background-size: 1000%;
 	    	transition: all 1s $cubic;
+			z-index: 2
 			&:before {
 					content: '';
 					position: fixed;
